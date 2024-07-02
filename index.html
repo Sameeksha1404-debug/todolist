@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-App </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container"> 
+        <h1>TO-DO-List</h1>
+         <input type="text" id="todoinput" placeholder="Write your next todo here"><!-- to accept data from the user   use of id---  to connect the input with a label*/ -->
+        <button id="addtodo" >Add Todo</button>
+        <div>
+        <button class="filterbtn" data-filter="ALL">All</button>
+        <button class="filterbtn"data-filter="Completed">Completed</button>
+        <button class="filterbtn" data-filter="Pending">Pending</button>
+    </div>
+<ul id="todoList">
+</div>
+    </ul>
+    <script src="scripts.js"></script>
+</body>
+</html>

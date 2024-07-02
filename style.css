@@ -1,0 +1,90 @@
+:root{
+    --body-background :#f4f4f9;
+    --btn-primary: #5cabff;
+    --btn-secondary:#d57208;
+    --btn-active:#4a9082;
+    --btn-edit:#ffd700;
+    --btn-completed:#32cd32;
+    --btn-delete:#f85639;
+}
+*{
+    box-sizing: border-box;
+
+}
+body{
+    margin:0;
+    padding:0;
+    background-color:var(--body-background);
+}
+.container{
+    background-color:white ;
+    max-width:600px;
+    margin: auto;/*top and bottom- margin=auto means to center the elemnt->*/
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+padding:20 px;
+}
+h1{
+    text-align: centre;
+}
+#todoinput{
+    width:75%;
+    padding: 20px;
+    margin-right: 10px;
+    border:2px solid #ddd;
+    border-radius: 5px;
+}
+#addtodo{
+    padding:10px ;
+    background-color:var( --btn-primary);
+    border:none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+ul{
+    list-style-type: NONE;
+    padding: 0;
+}
+li{
+    padding: 10px;
+    border-bottom: 1px solid #ddd ;
+    
+}
+li:hover{
+    background-color: aliceblue;
+}
+li:last-child{
+    border-bottom:none;
+}
+.filterbtn,.editbtn, .deletebtn, .completedbtn{
+    margin:5px;
+    padding:5px;
+    padding:10px 15px;
+    background-color:var(--btn-secondary);
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    transition:background-color 0.3s;
+}
+.editbtn{
+    background-color: var(--btn-edit);
+}
+.deletebtn{
+    background-color: var(--btn-delete);}
+.completedbtn{
+        background-color: var(--btn-completed);}
+
+.filterbtn:hover{
+    background-color: var(--btn-active);
+}
+.todoItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.completed{
+    text-decoration:line-through;
+}
